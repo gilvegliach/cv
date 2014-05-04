@@ -97,34 +97,19 @@
 
 \begin{minipage}{0.45\linewidth}
   \begin{tabular}{ll}
-    %Phone:  & 00 39 040 946864 \\
     Mobile: & 00 49 157 30208197 \\
     Email: & \href{mailto:gil.vegliach@gmail.com}{\tt gil.vegliach@gmail.com} \\
     Homepage: & \href{http://www.gilvegliach.it/}{\tt http://www.gilvegliach.it/} \\
-    Personal: & Born on 19 Feb 1987 in Trieste (Italy). Italian citizen\\
+    Personal: & Born on 19 Feb 1987 in Trieste (Italy), Italian citizen\\
     Languages: & English C1+ (certified), German A2 (certified), Italian mother tongue
   \end{tabular}
 \end{minipage}
 
 \bigskip
-Gil is a highly skilled computer scientist, with a strong theoretical background. Freshly graduated in April 2013 in the European Master in Computational Logic, a joint degree by TU Dresden, FU Bozen and TU Wien, his early teenage interest in coding developed into an obsessive craving for more complex problems, where 
+Gil is a highly skilled developer, with a strong theoretical background. Graduated in April 2013 in the European Master in Computational Logic, a joint degree by TU Dresden, FU Bozen and TU Wien, his early teenage interest in coding developed into an obsessive craving for more complex problems, where 
 Gil's strong analytical-quantitative mindset, acquired in a bachelor of mathematics, and his research skills, matured in a top-notch overseas research centre, prove invaluable for individuating added-value solutions. 
 
 % ADD AGAIN WHEN APP IS COMPLETED
-%\section*{Mobile development}
-%\begin{itemize}
-%\item
-%\begin{itemize}
-%      \item {\it Title}: Paparazzi, for Android 3.0+
-%      \item {\it Homepage}: \url{http://goo.gl/541h6}
-%      \item {\it Description}: tap the screen to upload a photo onto Facebook, see details below
-%      \item {\it Technologies}: 
-%        Facebook \textsc{sdk} 3.0: session management, publishing; 
-%        Android camera: surface, preview; 
-%       \phantom{xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx}%
-%       \textsc{ui/ux}: Android 3.0+ themes, touch events, options menu
-%\end{itemize}           
-%\end{itemize}
 
 %\vspace{-0.55cm}
 
@@ -132,14 +117,21 @@ Gil's strong analytical-quantitative mindset, acquired in a bachelor of mathemat
 \begin{itemize}
 \item Cortado AG, Berlin, as an Android Software Developer, June 2013--present.
 \begin{itemize}
-      \item {\it Project}: Personal Printing Client for Android, version 3.0
-      \item {\it Boss}: Johaness Orgis (johannes.orgis@team.cortado.com)
+      \item {\it Projects}: 
+      \begin{enumerate}
+          \item User interface and browsing for Cortado Corporate 
+          \item Document preview for Cortado Corporate
+          \item Personal Printing Client v3.0     
+      \end{enumerate}
+      \item {\it Boss}: Mathias Pr\"ohl (mathias.proehl@cortado.com)
+      \item {\it Previous boss}: Johaness Orgis (linkedin: \url{http://goo.gl/PurxAM})
+      \item {\it Technologies}: see descriptions per project below
 \end{itemize}
 \item \textsc{Nicta} Canberra, ACT, Australia, as an intern, August--December 2012. 
 \begin{itemize}
       \item {\it Project}: Formal properties of first-order temporal logic for runtime verification and business rules
       \item {\it Supervisor}: Andreas Bauer (andreas.bauer@nicta.com.au)
-      \item {\it Topics}: runtime verification, monitoring, model-checking, temporal first-order logic, business rules
+      \item {\it Topics}: runtime monitoring of mobile malware, business rules
 \end{itemize}
 \item Siemens AG Munich, as an intern February--April 2012.
 \begin{itemize}
@@ -151,9 +143,27 @@ Gil's strong analytical-quantitative mindset, acquired in a bachelor of mathemat
 \begin{itemize}
       \item {\it Project}: Runtime Verification meets Android Security
       \item {\it Supervisor}: Andreas Bauer (andreas.bauer@nicta.com.au)
-      \item {\it Topics}: runtime verification, Android malware, monitoring, behavioural detection, temporal first-order logic, java programming
+      \item {\it Topics}: runtime monitoring of mobile malware, Android development, behavioural detection\end{itemize}
 \end{itemize}
+
+\section*{Other mobile development}
+\begin{itemize}
+	\item
+	\begin{itemize} 
+	    \item {\it Title}: Berlin Subway
+	    \item {\it G+ community}: \url{http://goo.gl/da8Vh4}
+	    \item {\it Description}: optimized subway map of Berlin, with search
+	    \item {\it Technologies}: Canvas and Paint API, GestureDetector, BitmapRegionDecoder, Search API
+	\end{itemize}
+    \item
+	\begin{itemize}
+	      \item {\it Title}: Paparazzi
+	      \item {\it Homepage}: \url{http://goo.gl/541h6}
+	      \item {\it Description}: tap the screen to upload a photo onto Facebook
+	      \item {\it Technologies}: Facebook \textsc{sdk} 3.0: session management, publishing; Camera: surface, preview       
+	\end{itemize}           
 \end{itemize}
+
 
 \section*{Education}
 \begin{itemize}
@@ -182,10 +192,43 @@ Gil's strong analytical-quantitative mindset, acquired in a bachelor of mathemat
 \begin{itemize1}
 \item
 \begin{itemize}
+\item {\it Title}: User Interface and browsing for Cortado Corporate 
+\item {\it Referees}: Mathias Pr\"ohl (mathias.proehl@cortado.com),\\\phantom{xxxxxxx.}Johannes Orgis (linkedin: \url{http://goo.gl/PurxAM})
+\item {\it Technologies}: NavigationDrawer, Contextual Action Mode, flipping custom layout, custom themes, ContentProvider, IntentService, Loaders
+
+\item {\it Description}: (see also Employment) 
+Cortado Corporate and Cortado Workplace are multifunctional solutions for mobile productivity. Features comprehend file browsing, file previewing, file sharing, cloud storage, and cloud printing. Furthermore, the Corporate edition offers MDM and BYOD through the use of Cortado Corporate Server. Both apps are undergoing a complete rebuilt and rebrand. The main idea is to provide a more modern user-interface, additional features, and a cleaner codebase to maintain.
+\medskip
+
+Gil's contribution was twofold: to implement UI/UX patterns for the best user experience and code maintainability, and to write the business logic for remote and local file browsing. 
+For the former, in addition to the NavigationDrawer and the ActionBar with Contextual Actions, Gil reverse-engineered Gmail's approach to multi-select, building a custom layout that can flip between its child views. 
+\medskip
+
+For the latter, remote and local browsing were integrated following the best practices by the Google's engineer Virgil Dobjanschi (Google I/O 2010): a ContentProvider provides the UI with file data, merging a SQLite cache with content from network requests. Those are decoupled in an IntentService. The UI employs Loaders for background loading and uses a custom ActionBar animation to give feedback back to the user. The project took less than three weeks and all the components are back-compatible to Android 2.3.
+\end{itemize}
+
+\bigskip
+
+\item
+\begin{itemize}
+\item {\it Title}: Document preview for Cortado Corporate 
+\item {\it Referees}: Mathias Pr\"ohl (mathias.proehl@cortado.com),
+    \\\phantom{xxxxxxx.}Johannes Orgis (linkedin: \url{http://goo.gl/PurxAM})
+\item {\it Technologies}: Canvas and Paint API, GestureDetector, NinePatches, Service, LruCache, DiskLruCache, bitmap pooling
+\item {\it Description}: (see also Employment and above) Document previewing is a key feature of Cortado Corporate and Workplace. On a preview request, the corresponding file is virtually printed on a remote server, and thereafter the pages are lazily downloaded one by one. The main challenge is to keep memory usage below the hard limit of the memory class while, at the same time, avoid garbage collection that would generate hiccups on the UI. Other constraints encompass avoiding unnecessary downloading and decoding, and performant touch gestures such as pinch zoom and quick scale.
+\medskip
+
+The solution is totally decoupled component, made up of a UI part and a backend Service part. For the former, DocumentView has been entirely coded up, basically a zoomable ListView supporting different page geometries and page tiling, to reduce unnecessary drawing. The pixel-precise edge detection, the tiling, and the implementation of the scaling transformations would have been almost impossible without Gil's strong mathematical background. For the backend part, Gil implemented a Service with a efficiently synchronised two-level cache, a bitmap pool that let the decoder reuse memory and avoid garbage collection, and a network requests re-orderer that always tries to download first the currently visible pages on screen.
+\end{itemize}
+
+\bigskip
+
+\item
+\begin{itemize}
 \item {\it Title}: Personal Printing 3.0 for Android 
-\item {\it Referee}: Johannes Orgis (johannes.orgis@team.cortado.com)
-\item {\it Technologies}: Android 3.0+, HttpUrlRequest for REST, hybrid Services, custom Views, animations
-\item {\it Description}: (see also Employment) Personal Printing is Cortado AG's pull-printing solution that helps you minimise printing costs in your company. Print jobs are managed directly at the printer by the Personal Printing app, letting the user delete unnecessary jobs, thus saving toner, and collect them on the spot, thus preventing the printer trays from becoming clogged up.
+\item {\it Referee}: Johannes Orgis, linkedin: \url{http://goo.gl/PurxAM}
+\item {\it Technologies}: Android 3.0+, HttpUrlRequest for REST, hybrid Services, ZXing, custom Views, animations
+\item {\it Description}: (see also Employment) Personal Printing is Cortado AG's pull-printing solution that helps minimise printing costs in your company. Print jobs are managed directly at the printer by the Personal Printing app, letting the user delete unnecessary jobs, thus saving toner, and collect them on the spot, thus preventing private data leaks and printer trays clogging.
 \medskip
 
 An iOS version had been already developed when Gil took up the task of porting the app to Android. The UI was adapted to an edgier, smoother, more asynchronous version, taking advantage of a custom SlideView that Gil coded up, and keeps maintaining, as a subproject. The REST requests, differently from the iOS version, do not block the UI: they were decoupled in a Service that elegantly communicates with the Activity through Messengers. Advanced animation tricks exploiting onPreDrawListener were employed for the ListView removal animation.
