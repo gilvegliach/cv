@@ -1,0 +1,276 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+\usepackage{amsmath}
+
+% Set your name here
+\def\name{Gil Vegliach}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{http://www.gilvegliach.it/files/CV.pdf}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {computer science, mathematics, android},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\newenvironment{itemize1}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{0em}
+  }
+}{
+  \end{list}
+}
+
+% Gil's packages
+%\usepackage{enumitem}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    %Phone:  & 00 39 040 946864 \\
+    Mobile: & 00 49 157 30208197 \\
+    Email: & \href{mailto:gil.vegliach@gmail.com}{\tt gil.vegliach@gmail.com} \\
+    Homepage: & \href{http://www.gilvegliach.it/}{\tt http://www.gilvegliach.it/} \\
+    Personal: & Born on 19 Feb 1987 in Trieste (Italy). Italian citizen\\
+    Languages: & English C1+ (certified), German A2 (certified), Italian mother tongue
+  \end{tabular}
+\end{minipage}
+
+\bigskip
+Gil is a highly skilled computer scientist, with a strong theoretical background. Freshly graduated in April 2013 in the European Master in Computational Logic, a joint degree by TU Dresden, FU Bozen and TU Wien, his early teenage interest in coding developed into an obsessive craving for more complex problems, where 
+Gil's strong analytical-quantitative mindset, acquired in a bachelor of mathematics, and his research skills, matured in a top-notch overseas research centre, prove invaluable for individuating added-value solutions. 
+
+% ADD AGAIN WHEN APP IS COMPLETED
+%\section*{Mobile development}
+%\begin{itemize}
+%\item
+%\begin{itemize}
+%      \item {\it Title}: Paparazzi, for Android 3.0+
+%      \item {\it Homepage}: \url{http://goo.gl/541h6}
+%      \item {\it Description}: tap the screen to upload a photo onto Facebook, see details below
+%      \item {\it Technologies}: 
+%        Facebook \textsc{sdk} 3.0: session management, publishing; 
+%        Android camera: surface, preview; 
+%       \phantom{xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx}%
+%       \textsc{ui/ux}: Android 3.0+ themes, touch events, options menu
+%\end{itemize}           
+%\end{itemize}
+
+%\vspace{-0.55cm}
+
+\section*{Employment}
+\begin{itemize}
+\item Cortado AG, Berlin, as an Android Software Developer, June 2013--present.
+\begin{itemize}
+      \item {\it Project}: Personal Printing Client for Android, version 3.0
+      \item {\it Boss}: Johaness Orgis (johannes.orgis@team.cortado.com)
+\end{itemize}
+\item \textsc{Nicta} Canberra, ACT, Australia, as an intern, August--December 2012. 
+\begin{itemize}
+      \item {\it Project}: Formal properties of first-order temporal logic for runtime verification and business rules
+      \item {\it Supervisor}: Andreas Bauer (andreas.bauer@nicta.com.au)
+      \item {\it Topics}: runtime verification, monitoring, model-checking, temporal first-order logic, business rules
+\end{itemize}
+\item Siemens AG Munich, as an intern February--April 2012.
+\begin{itemize}
+      \item {\it Projects}: REAgent, Optique
+	  \item {\it Supervisor}: Mikhail Roshchin (mikhail.roshchin@siemens.com)
+	  \item {\it Topics}: intelligent data analysis, logic description of data
+\end{itemize}
+\item \textsc{Nicta} Canberra, ACT, Australia, as an intern, August--November 2011. 
+\begin{itemize}
+      \item {\it Project}: Runtime Verification meets Android Security
+      \item {\it Supervisor}: Andreas Bauer (andreas.bauer@nicta.com.au)
+      \item {\it Topics}: runtime verification, Android malware, monitoring, behavioural detection, temporal first-order logic, java programming
+\end{itemize}
+\end{itemize}
+
+\section*{Education}
+\begin{itemize}
+  \item M.Sc. EMCL (Computational Logic in Computer Science), Technische Universit\"{a}t Dresden, Free University of Bozen, Technische Universit\"{a}t Wien, October 2010--April 2013, overall German mark: 1.2--Excellent, thesis mark: 1.0--Excellent; overall Italian mark: 110 cum laude out of 110.
+
+  \item B.S. Mathematics, University of Trieste, 2006--2010, mark: 110 cum laude out of 110. 
+\end{itemize}
+
+\section*{Relevant IT Certifications}
+\begin{itemize}
+\item Oracle Certified Programmer, Java SE 5/SE 6 (OCPJP, formerly SCJP), 28 June 2012, score 95\%
+\item Oracle Certified Associate, Java SE 5/SE 6 (SCJA), 10 July 2010, score 86\%
+\end{itemize}
+
+\section*{Publications}
+\begin{itemize}
+\item From propositional to first-order monitoring, 2013, with A. Bauer and J. K\"{u}star, {\it Proc. 4th International Conference on Runtime Verification (RV)}
+
+\item Runtime Verification meets Android Security, 2012, with A. Bauer and J. K\"{u}star, {\it NASA Formal Methods Symposium (NFM 2012)}
+
+\item Incomplete Databases: Missing Records and Missing Values, 2012, workshop paper with W. Nutt and S. Razniewski, {\it Data Quality in Data Integration Systems (DQIS 2012)}
+\end{itemize}
+
+
+\section*{Projects in detail}
+\begin{itemize1}
+\item
+\begin{itemize}
+\item {\it Title}: Personal Printing 3.0 for Android 
+\item {\it Referee}: Johannes Orgis (johannes.orgis@team.cortado.com)
+\item {\it Technologies}: Android 3.0+, HttpUrlRequest for REST, hybrid Services, custom Views, animations
+\item {\it Description}: (see also Employment) Personal Printing is Cortado AG's pull-printing solution that helps you minimise printing costs in your company. Print jobs are managed directly at the printer by the Personal Printing app, letting the user delete unnecessary jobs, thus saving toner, and collect them on the spot, thus preventing the printer trays from becoming clogged up.
+\medskip
+
+An iOS version had been already developed when Gil took up the task of porting the app to Android. The UI was adapted to an edgier, smoother, more asynchronous version, taking advantage of a custom SlideView that Gil coded up, and keeps maintaining, as a subproject. The REST requests, differently from the iOS version, do not block the UI: they were decoupled in a Service that elegantly communicates with the Activity through Messengers. Advanced animation tricks exploiting onPreDrawListener were employed for the ListView removal animation.
+\end{itemize}
+
+\bigskip
+%\item
+%\begin{itemize}
+%\item {\it Title}: Paparazzi, for Android 3.0+
+%\item {\it Homepage}: \url{http://goo.gl/541h6}
+%\item {\it Description}: tap the screen to upload a photo onto Facebook
+%\item {\it Technologies}: 
+%        Facebook \textsc{sdk} 3.0: session management, publishing; 
+%        Android camera: surface, preview; 
+%        \textsc{ui/ux}: Android 3.0+ themes, touch events, options menu
+%\item {\it Description}: developed for the last version of Android (3.0+), Paparazzi lets you make fun out of your friends uploading funny yet inconvenient photographs to facebook with just one tap. The user interface, enhanced by stylish Android 3.0+ graphical themes, informs the user to tap anywhere on the screen avoiding mind-boggling menu instructions. When they do so, a quick upload is automatic, except for a first-time integrated log-in. The user then can protect their privacy logging-out via a simple button in the menu. The simplicity and intuitiveness of the UI mask the sophisticated re-engineering of camera's inner workings and the deep social integration with Facebook SDK 3.0, needed for flash optimised speed.
+%\end{itemize}
+
+%\bigskip
+\item
+\begin{itemize}
+\item {\it Title}: Formal properties of first-order temporal logic for runtime verification and business rules 
+\item {\it Referees}: Andreas Bauer (andreas.bauer@nicta.com.au), Jan K\"{u}star (\textsc{Nicta} and ANU)
+\item {\it Theories}: LTL, model-checking, B\"uchi automata
+\item {\it Description}: (see also Employment) The development of the previous project was carried out in the form of a Master's thesis. The concept of a proper monitor was formalised and, albeit the shown impossibility of building a complete monitoring algorithm, a correct construction based on a novel automata model was depicted and then finally tested in the context of Android policies and the PCBRP project, the Provably Correct Rules and Processes project at \textsc{Nicta}.
+\end{itemize}
+
+\bigskip
+\item
+\begin{itemize}
+\item {\it Title}: Runtime Verification meets Android Security 
+\item {\it Referees}: Andreas Bauer (andreas.bauer@nicta.com.au), Jan K\"{u}star (\textsc{Nicta} and ANU)
+\item {\it Technologies}: Android OS 2.6, Java (Dalvik VM)
+\item {\it Environments}: Eclipse, Android emulator and Samsung Nexus S
+\item {\it Description}: (see also Employment and Publications) The goal was to develop a dynamic security mechanism for Android-powered handsets based on runtime verification, which lets users monitor the behaviour of installed applications. A prototype was implemented and it was shown how it could detect some real-world security threats.
+\end{itemize}
+
+\bigskip
+\item
+\begin{itemize}
+\item {\it Title}: Incomplete Databases: Missing Records and Missing Values
+\item {\it Referees}: Werner Nutt (nutt@inf.unibz.it), Simon Razniewski (razniewski@inf.unibz.it)
+\item {\it Description}: (see also Publications) The goal was to extend the previous theory of incompleteness of database by W. Nutt and S. Razniewski with null values, which represent missing attributes. The concepts of query completeness and table completeness were extended, a description and a proof of tc-qc entailment given, and different real-world scenarios outlined. 
+\end{itemize}
+
+\bigskip
+\item
+\begin{itemize}
+\item {\it Title}: REAgent
+\item {\it Referee}: Mikhail Roshchin (mikhail.roshchin@siemens.com)
+\item {\it Technologies}: C\#, Drool Expert, Drools Fusion
+\item {\it Environment}: Visual Studio 2010 Express
+\item {\it Description}: Siemens is currently working on automatic detection of turbines failure and malfunctioning. The abductive reasoning is carried out by an higher-level module which infers possible causes from event messages generated by a lower-level module. The messages represent the actual data or rather the meaningful pieces of it. The data needs to be translated in messages and this is done sieving raw data through logical expert-made formulas whose semantics clusters together and filters out pieces. 
+\medskip
+
+This project was about the lower-level component, improving an existent theory to the point of a (simple) working implementation. The formal syntax of the formulas was completely reworked and a new semantics developed to mathematical rigour. A C\# implementation was provided and tested against real use-cases. Documentation was written. A final reworking to the core algorithms made the Drools platform to be superfluous, leading to a sharp improvement of final speed. This would not have been possible without Gil's theoretical and research background which helped to  point out existent foundational problems and to implement algorithms substituting Drool's rules engine.
+\end{itemize}
+
+\bigskip
+\item
+\begin{itemize}
+\item {\it Title}: Optique
+\item {\it Referees}: Mikhail Roshchin (mikhail.roshchin@siemens.com), Jan-Gregor Fischer
+\item {\it Technologies}: SparkQl, D2RQ, Oracle Database 11g, Proteg\'e, C\# 
+\item {\it Environments}: Oracle Database 11g
+\item {\it Description}: Siemens is currently working on automatic detection of turbines failure and malfunctioning. 
+In the above mentioned project's framework, Siemens draws the adbuctive inferences from a formal description of the turbines themselves. The formal description of the turbines is rendered by an ontology, a UML-like diagram expressing relations among turbine's parts and among parts, observations and synthoms of those parts. After the logical schema is drawn, the structure needs to be populated as with classes and object instances. The individuals of the ontology are made from a large Oracle database through D2RQ mappings connecting raw table entries with abstract objects. 
+\medskip
+
+This project was about the mapping level, interfacing the database with the ontology. Setting up a suitable environment (Proteg\'e and the Oracle Database 11g), layering and extending the existing ontology, writing up the mappings from scratch, developing a nice web-interface, making up meaningful queries, writing the documentation and even a slide presentation were all tasks that have been accomplished. To link the components Siemens-made C\# software was used: Gil's expertise led to discover and quickly correct bugs in the source code. 
+\end{itemize}
+\end{itemize1}
+
+\section*{Hobbies}
+Languages and linguistics, running, martial art (practised for two years by Makoto Gymn in Trieste) and basketball (played for one year in the university's team), playing piano, graphics and portrait drawing, travelling around the world
+
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
