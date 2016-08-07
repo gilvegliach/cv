@@ -27,7 +27,7 @@
 
 % Replace this with a link to your CV if you like, or set it empty
 % (as in \def\footerlink{}) to remove the link in the footer:
-\def\footerlink{http://www.gilvegliach.it/files/CV.pdf}
+\def\footerlink{}%http://www.gilvegliach.it/files/CV.pdf}
 
 % The following metadata will show up in the PDF properties
 \hypersetup{
@@ -100,17 +100,19 @@
 
 \begin{minipage}{0.45\linewidth}
   \begin{tabular}{ll}
-    Mobile: & 00 49 157 30208197 \\
+    Mobile: & +49 157 30208197 \\
     Email: & \href{mailto:gil.vegliach@gmail.com}{\tt gil.vegliach@gmail.com} \\
-    Homepage: & \href{http://www.gilvegliach.it/}{\tt http://www.gilvegliach.it/} \\
-    Personal: & Born on 19 Feb 1987 in Trieste (Italy), Italian citizen\\
-    Languages: & English C1+ (certified), German A2 (certified), Italian mother tongue
+    Blog: & \href{http://gilvegliach.it/}{\tt http://gilvegliach.it} \\
+    Github: &\href{http://github.com/gilvegliach}{\tt http://github.com/gilvegliach}\\
+    Stackoverflow: & \href{http://goo.gl/shvInz}{\tt http://goo.gl/shvInz} \\
+    %Personal: & Born on 19 Feb 1987 in Trieste (Italy), Italian citizen\\
+    Languages: & \textsc{en c1+} (certified), \textsc{de b1} (certified), \textsc{it}
   \end{tabular}
 \end{minipage}
 
 \bigskip
-Gil is a highly skilled developer, with a strong theoretical background. Graduated in April 2013 in the European Master in Computational Logic, a joint degree by TU Dresden, FU Bozen and TU Wien, his early teenage interest in coding developed into an obsessive craving for more complex problems, where 
-Gil's strong analytical-quantitative mindset, acquired in a bachelor of mathematics, and his research skills, matured in a top-notch overseas research centre, prove invaluable for individuating added-value solutions. 
+%Gil is a highly skilled developer, with a strong theoretical background. Graduated in April 2013 in the European Master in Computational Logic, a joint degree by TU Dresden, FU Bozen and TU Wien, his early teenage interest in coding developed into an obsessive craving for more complex problems, where 
+%Gil's strong analytical-quantitative mindset, acquired in a bachelor of mathematics, and his research skills, matured in a top-notch overseas research centre, prove invaluable for individuating added-value solutions. 
 
 % ADD AGAIN WHEN APP IS COMPLETED
 
@@ -118,62 +120,89 @@ Gil's strong analytical-quantitative mindset, acquired in a bachelor of mathemat
 
 \section*{Employment}
 \begin{itemize}
-\item Cortado AG, Berlin, as an Android Software Developer, June 2013--present.
+\item Zalando \textsc{se}, {$\scriptstyle\sim$}3 billion revenue in 2015, Berlin, as a Software engineer (Android and Mobile API), March 2015--present. 
 \begin{itemize}
-      \item {\it Projects}: 
-      \begin{enumerate}
-          \item User interface and browsing for Cortado Corporate 
-          \item Document preview for Cortado Corporate
-          \item Personal Printing Client v3.0     
-      \end{enumerate}
-      \item {\it Boss}: Mathias Pr\"ohl (mathias.proehl@cortado.com)
-      \item {\it Previous boss}: Johaness Orgis (linkedin: \url{http://goo.gl/PurxAM})
-      \item {\it Technologies}: see descriptions per project below
+	\item $\circ$ Migrated app to Dagger 2 decreasing startup time by 300\% while reducing crash rate to <0.5\%.
+	\item $\circ$ Gave internal workshops on testability and mentored new developers fostering code quality.
+	\item $\circ$ General developer work, from requirements to delivery.
+	\item $\circ$ Responsible for hiring at all levels, from juniors developers to dev leads, which resulted in doubling the Android team in less than 6 months.
+	\item $\circ$ Contributed to moving the mobile API to microservices which will reduce the time-to-market dramatically.
+	
+	
+%     \item {\it Project}: Zalando shop app
+%      \item {\it Boss}: Christoph Springer 
+\end{itemize}
+\item Cortado AG, Berlin, as an Android Developer, June 2013--February 2015.
+\begin{itemize}
+     \item $\circ$ Responsible for architecture of app to revamp the company with his new born start-up Templace.
+     \item $\circ$ Implemented key components such as preview and file operations.
+     \item $\circ$ Collaborated with UX and product teams to assess requirements.
+     
+%      \item {\it Projects}: Teamplace, Personal Printing
+      
+%      \begin{enumerate}
+%          \item User interface and browsing for Cortado Corporate 
+%          \item Document preview for Cortado Corporate
+%          \item Personal Printing Client v3.0     
+%      \end{enumerate}
+%      \item {\it Referees}: Johaness Orgis (linkedin: \url{http://goo.gl/PurxAM}),
+%      \begin{itemize}
+%      	\item Mathias Pr\"ohl (mathias.proehl@cortado.com), 
+%		\item Benjamin Sch\"uler (linkedin: \url{https://goo.gl/wtBJ0Q})
+%	  \end{itemize}
+%      \item {\it Technologies}: see descriptions per project below
 \end{itemize}
 \item \textsc{Nicta} Canberra, ACT, Australia, as an intern, August--December 2012. 
 \begin{itemize}
-      \item {\it Project}: Formal properties of first-order temporal logic for runtime verification and business rules
-      \item {\it Supervisor}: Andreas Bauer (andreas.bauer@nicta.com.au)
-      \item {\it Topics}: runtime monitoring of mobile malware, business rules
+	 \item $\circ$ Asked back to continue previous work after excellent performance.
+	 \item $\circ$ Expanded on the previous prototype resulting in multiple publications.
+    %  \item {\it Project}: Formal properties of first-order temporal logic for runtime verification and business rules
+     % \item {\it Supervisor}: Andreas Bauer (andreas.bauer@nicta.com.au)
+     % \item {\it Topics}: runtime monitoring of mobile malware, business rules
 \end{itemize}
 \item Siemens AG Munich, as an intern February--April 2012.
 \begin{itemize}
-      \item {\it Projects}: REAgent, Optique
-	  \item {\it Supervisor}: Mikhail Roshchin (mikhail.roshchin@siemens.com)
-	  \item {\it Topics}: intelligent data analysis, logic description of data
+     \item $\circ$ Reduced REAgent start-up time ({$\scriptstyle\sim$}40 sec) replacing Drool Fusion with ad-hoc algorithms.
+     \item $\circ$ Optimised queries in Optique which resulted in a demo for external customers.
+
+          % \item {\it Projects}: REAgent, Optique
+	 % \item {\it Supervisor}: Mikhail Roshchin (mikhail.roshchin@siemens.com)
+	 % \item {\it Topics}: intelligent data analysis, logic description of data
 \end{itemize}
 \item \textsc{Nicta} Canberra, ACT, Australia, as an intern, August--November 2011. 
 \begin{itemize}
-      \item {\it Project}: Runtime Verification meets Android Security
-      \item {\it Supervisor}: Andreas Bauer (andreas.bauer@nicta.com.au)
-      \item {\it Topics}: runtime monitoring of mobile malware, Android development, behavioural detection\end{itemize}
+	\item $\circ$ Prototyped a solution for Android security which was published at the Nasa Formal Method Symposium 2012.
+%      \item {\it Project}: Runtime Verification meets Android Security
+%      \item {\it Supervisor}: Andreas Bauer (andreas.bauer@nicta.com.au)
+%      \item {\it Topics}: runtime monitoring of mobile malware, Android development, behavioural detection
+\end{itemize}
 \end{itemize}
 
-\section*{Other mobile development}
+%\section*{Other mobile development}
 
-\begin{itemize1}
-	\item
-	\begin{itemize} 
-	    \item {\it Title}: Berlin Subway
-	    \item {\it G+ community}: \url{http://goo.gl/da8Vh4}
-	    \item {\it Description}: optimized subway map of Berlin, with search
-	    \item {\it Technologies}: Canvas and Paint API, GestureDetector, BitmapRegionDecoder, Search API
-	\end{itemize}\medskip
-    \item
-	\begin{itemize}
-	      \item {\it Title}: Paparazzi
-	      \item {\it Homepage}: \url{http://goo.gl/541h6}
-	      \item {\it Description}: tap the screen to upload a photo onto Facebook
-	      \item {\it Technologies}: Facebook \textsc{sdk} 3.0: session management, publishing; Camera: surface, preview       
-	\end{itemize}           
-\end{itemize1}
+%\begin{itemize1}
+%	\item
+%	\begin{itemize} 
+%	    \item {\it Title}: Berlin Subway
+%	    \item {\it Google Play}: \url{http://goo.gl/kCK2Em}
+%	    \item {\it Description}: optimized subway map of Berlin, with search
+%	    \item {\it Technologies}: Canvas and Paint API, GestureDetector, BitmapRegionDecoder, Search API
+%	\end{itemize}\medskip
+%    \item
+%	\begin{itemize}
+%	      \item {\it Title}: Paparazzi
+%	      \item {\it Homepage}: \url{http://goo.gl/541h6}
+%	      \item {\it Description}: tap the screen to upload a photo onto Facebook
+%	      \item {\it Technologies}: Facebook \textsc{sdk} 3.0: session management, publishing; Camera: surface, preview       
+%	\end{itemize}           
+%\end{itemize1}
 
 
 \section*{Education}
 \begin{itemize}
-  \item M.Sc. EMCL (Computational Logic in Computer Science), Technische Universit\"{a}t Dresden, Free University of Bozen, Technische Universit\"{a}t Wien, October 2010--April 2013, overall German mark: 1.2--Excellent, thesis mark: 1.0--Excellent; overall Italian mark: 110 cum laude out of 110.
+  \item M.Sc. EMCL (Computational Logic in Computer Science), TUD, FUB, TUW, October 2010--April 2013, German mark: 1.2--Excellent, thesis mark: 1.0--Excellent; Italian mark: 110/110 cum laude.
 
-  \item B.S. Mathematics, University of Trieste, 2006--2010, mark: 110 cum laude out of 110. 
+  \item B.S. Mathematics, University of Trieste, 2006--2010, mark: 110/110 cum laude. 
 \end{itemize}
 
 \section*{Relevant IT Certifications}
@@ -184,6 +213,8 @@ Gil's strong analytical-quantitative mindset, acquired in a bachelor of mathemat
 
 \section*{Publications}
 \begin{itemize}
+\item The ins and outs of first-order runtime verification, 2015, with A. Bauer and J. K\"{u}star, to appear in {\it Formal Methods in System Design}
+
 \item From propositional to first-order monitoring, 2013, with A. Bauer and J. K\"{u}star, {\it Proc. 4th International Conference on Runtime Verification (RV)}
 
 \item Runtime Verification meets Android Security, 2012, with A. Bauer and J. K\"{u}star, {\it NASA Formal Methods Symposium (NFM 2012)}
@@ -191,6 +222,8 @@ Gil's strong analytical-quantitative mindset, acquired in a bachelor of mathemat
 \item Incomplete Databases: Missing Records and Missing Values, 2012, workshop paper with W. Nutt and S. Razniewski, {\it Data Quality in Data Integration Systems (DQIS 2012)}
 \end{itemize}
 
+% Comments out till next \fi
+\iffalse
 
 \section*{Projects in detail}
 \begin{itemize1}
@@ -198,7 +231,7 @@ Gil's strong analytical-quantitative mindset, acquired in a bachelor of mathemat
 \begin{itemize}
 \item {\it Title}: User Interface and browsing for Cortado Corporate 
 \item {\it Referees}: Mathias Pr\"ohl (mathias.proehl@cortado.com),\\\phantom{xxxxxxx.}Johannes Orgis (linkedin: \url{http://goo.gl/PurxAM})
-\item {\it Technologies}: NavigationDrawer, Contextual Action Mode, flipping custom layout, custom themes, ContentProvider, IntentService, Loaders
+\item {\it Technologies}: NavigationDrawer, Contextual Action Mode, SwipeToRefreshLayout, ContentProvider, IntentService, Loaders, flipping custom layout, custom themes
 
 \item {\it Description}: (see also Employment) 
 Cortado Corporate and Cortado Workplace are multifunctional solutions for mobile productivity. Features comprehend file browsing, file previewing, file sharing, cloud storage, and cloud printing. Furthermore, the Corporate edition offers MDM and BYOD through the use of Cortado Corporate Server. Both apps are undergoing a complete rebuilt and rebrand. The main idea is to provide a more modern user-interface, additional features, and a cleaner codebase to maintain.
@@ -231,6 +264,7 @@ The solution is totally decoupled component, made up of a UI part and a backend 
 \begin{itemize}
 \item {\it Title}: Personal Printing 3.0 for Android 
 \item {\it Referee}: Johannes Orgis, linkedin: \url{http://goo.gl/PurxAM}
+\item {\it Google Play}: \url{https://goo.gl/qHCaLR}
 \item {\it Technologies}: Android 3.0+, HttpUrlRequest for REST, hybrid Services, ZXing, custom Views, animations
 \item {\it Description}: (see also Employment) Personal Printing is Cortado AG's pull-printing solution that helps minimise printing costs in your company. Print jobs are managed directly at the printer by the Personal Printing app, letting the user delete unnecessary jobs, thus saving toner, and collect them on the spot, thus preventing private data leaks and printer trays clogging.
 \medskip
@@ -306,8 +340,12 @@ This project was about the mapping level, interfacing the database with the onto
 \end{itemize}
 \end{itemize1}
 
+
 \section*{Hobbies}
 Languages and linguistics, running, martial art (practised for two years by Makoto Gymn in Trieste) and basketball (played for one year in the university's team), playing piano, graphics and portrait drawing, travelling around the world
+
+% End of commented section
+\fi
 
 
 \bigskip
