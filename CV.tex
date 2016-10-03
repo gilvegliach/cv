@@ -13,6 +13,7 @@
 
 \usepackage{hyperref}
 \usepackage{geometry}
+\usepackage{xspace}
 
 % Comment the following lines to use the default Computer Modern font
 % instead of the Palatino font provided by the mathpazo package.
@@ -21,8 +22,6 @@
 \usepackage[sc,osf]{mathpazo}
 \usepackage{amsmath}
 
-
-% Set your name here
 \def\name{Gil Vegliach}
 
 % Replace this with a link to your CV if you like, or set it empty
@@ -34,7 +33,7 @@
   colorlinks = true,
   urlcolor = black,
   pdfauthor = {\name},
-  pdfkeywords = {computer science, mathematics, android},
+  pdfkeywords = {android, software development, algorithms, computer science, mathematics},
   pdftitle = {\name: Curriculum Vitae},
   pdfsubject = {Curriculum Vitae},
   pdfpagemode = UseNone
@@ -66,8 +65,6 @@
 % Don't indent paragraphs.
 \setlength\parindent{0em}
 
-
-
 % Make lists without bullets
 \renewenvironment{itemize}{
   \begin{list}{}{
@@ -77,7 +74,7 @@
   \end{list}
 }
 
-\newenvironment{itemize1}{
+\newenvironment{no-indent-itemize}{
   \begin{list}{}{
     \setlength{\leftmargin}{0em}
   }
@@ -85,59 +82,115 @@
   \end{list}
 }
 
-% Gil's packages
-%\usepackage{enumitem}
+\def\tilde{$\scriptstyle\sim$}
+\def\bullet{$\circ$\xspace}
 
 \begin{document}
 
-% Place name at left
 {\huge \name}
 
-% Alternatively, print name centered and bold:
-%\centerline{\huge \bf \name}
-
-\vspace{0.25in}
-
+\bigskip
 \begin{minipage}{0.45\linewidth}
-  \begin{tabular}{ll}
-    Mobile: & +49 157 30208197 \\
-    Email: & \href{mailto:gil.vegliach@gmail.com}{\tt gil.vegliach@gmail.com} \\
-    Blog: & \href{http://gilvegliach.it/}{\tt http://gilvegliach.it} \\
-    Github: &\href{http://github.com/gilvegliach}{\tt http://github.com/gilvegliach}\\
-    Stackoverflow: & \href{http://goo.gl/shvInz}{\tt http://goo.gl/shvInz} \\
-    %Personal: & Born on 19 Feb 1987 in Trieste (Italy), Italian citizen\\
-    Languages: & \textsc{en c1+} (certified), \textsc{de b1} (certified), \textsc{it}
+  \begin{tabular}{llll}
+    Mobile: & +49 157 30208197 
+       & Blog: & \href{http://gilvegliach.it/}{\tt http://gilvegliach.it} \\
+    Email: & \href{mailto:gil.vegliach@gmail.com}{\tt gil.vegliach@gmail.com} 
+       & Github: &\href{http://github.com/gilvegliach}{\tt http://github.com/gilvegliach}\\
+    Languages: & \textsc{en c1+}, \textsc{de b1}, \textsc{it} 
+       & Stackoverflow: & \href{http://goo.gl/shvInz}{\tt http://goo.gl/shvInz} \\      
   \end{tabular}
 \end{minipage}
 
 \bigskip
-%Gil is a highly skilled developer, with a strong theoretical background. Graduated in April 2013 in the European Master in Computational Logic, a joint degree by TU Dresden, FU Bozen and TU Wien, his early teenage interest in coding developed into an obsessive craving for more complex problems, where 
-%Gil's strong analytical-quantitative mindset, acquired in a bachelor of mathematics, and his research skills, matured in a top-notch overseas research centre, prove invaluable for individuating added-value solutions. 
-
-% ADD AGAIN WHEN APP IS COMPLETED
-
-%\vspace{-0.55cm}
+\textsc{Keywords}: Java, Android, Gradle, Dagger 2, Butterknife, Retrofit, Gson, Espresso, JUnit, 
+Scala, Play 2.x, Spring, Maven, AWS, EC2, JSON, HTTP, REST, GHE, Jira, Agile, Scrum.
 
 \section*{Employment}
-\begin{itemize}
-\item Zalando \textsc{se}, {$\scriptstyle\sim$}3 billion revenue in 2015, Berlin, as a Software engineer (Android and Mobile API), March 2015--present. 
-\begin{itemize}
-	\item $\circ$ Migrated app to Dagger 2 decreasing startup time by 300\% while reducing crash rate to <0.5\%.
-	\item $\circ$ Gave internal workshops on testability and mentored new developers fostering code quality.
-	\item $\circ$ General developer work, from requirements to delivery.
-	\item $\circ$ Responsible for hiring at all levels, from juniors developers to dev leads, which resulted in doubling the Android team in less than 6 months.
-	\item $\circ$ Contributed to moving the mobile API to microservices which will reduce the time-to-market dramatically.
-	
-	
-%     \item {\it Project}: Zalando shop app
-%      \item {\it Boss}: Christoph Springer 
-\end{itemize}
-\item Cortado AG, Berlin, as an Android Developer, June 2013--February 2015.
-\begin{itemize}
-     \item $\circ$ Responsible for architecture of app to revamp the company with his new born start-up Templace.
-     \item $\circ$ Implemented key components such as preview and file operations.
-     \item $\circ$ Collaborated with UX and product teams to assess requirements.
-     
+\begin{no-indent-itemize}
+  \item \textsc{Toptal LLC}, 3\% admission rate, as a Senior Software Engineer, contractor, Apr 2016-present.
+  \begin{itemize}
+    \item\bullet Global Mentor, helping students from low income backgrounds to make it in the industry \\  
+    \phantom{\bullet }(\href{https://goo.gl/sbqDdC}{https://goo.gl/sbqDdC})
+  \end{itemize}
+  \item \textsc{Zalando SE}, \tilde 3\textsc{b} rev 2015, Berlin, as a Software Engineer, 
+         Android and Mobile API, Mar 2015--present. 
+  \begin{itemize}
+	\item\bullet Migrated Android app to Dagger 2 decreasing startup time by 300\% and crash rate to <0.5\%.
+	\item\bullet Developed first mobile API micro-service to increase agility of the team.
+	\item\bullet Gave internal workshops on testability and mentored new developers.
+	\item\bullet Interviewed junior dev to dev leads, doubling the Android team in less than 6 months.	
+	\item\bullet General developer work in Java and Scala, from requirements to delivery.
+  \end{itemize}
+  \item \textsc{Cortado AG}, Berlin, as a Software Engineer, Android, Jun 2013--Feb 2015.
+  \begin{itemize}
+     \item\bullet Prototyped and responsible for new app architecture.
+     \item\bullet Implemented key components such as preview and file operations.
+     \item\bullet Collaborated with UX and product teams to assess requirements.
+  \end{itemize}
+  \item \textsc{Nicta}, Canberra, Australia, as a Software Engineer and Researcher intern, Aug--Dec 2012. 
+  \begin{itemize}
+	 \item\bullet Asked back to continue previous work after excellent performance.
+	 \item\bullet Expanded on the previous prototype resulting in multiple publications.
+  \end{itemize}
+  \item \textsc{Siemens AG}, Munich, as a Software Engineer intern Feb--Apr 2012.
+  \begin{itemize}
+     \item\bullet Reduced REAgent start-up time (\tilde 40 sec) replacing Drool Fusion with 
+           ad-hoc algorithms.
+     \item\bullet Optimized queries in Optique which resulted in a demo for external customers.
+  \end{itemize}
+  \item \textsc{Nicta}, Canberra, Australia, as a Software Engineer and Researcher intern, Aug--Nov 2011. 
+  \begin{itemize}
+	\item\bullet Prototyped a solution for Android security, published at the Nasa Formal Method \\
+	\phantom{\bullet }Symposium~2012.
+  \end{itemize}
+\end{no-indent-itemize}
+
+\section*{Education}
+\begin{no-indent-itemize}
+  \item M.Sc. EMCL (Computational Logic in Computer Science), TUD, FUB, TUW, 2010--Apr 2013, 
+        German mark: 1.2--Excellent, thesis mark: 1.0--Excellent; Italian mark: 110/110 cum laude.
+  \item B.S. Mathematics, University of Trieste, 2006--2010, mark: 110/110 cum laude. 
+\end{no-indent-itemize}
+
+\section*{Relevant IT Certifications}
+\begin{no-indent-itemize}
+  \item Oracle Certified Programmer, Java SE 5/6 (OCPJP, formerly SCJP), 28 Jun 2012, score 95\%
+  \item Oracle Certified Associate, Java SE 5/6 (SCJA), 10 Jul 2010, score 86\%
+  \item Parallel programming by EPFL on Coursera 
+        (\href{http://goo.gl/mqKWo3}{http://goo.gl/mqKWo3}), score 100\%
+  \item Functional Program Design in Scala by EPFL on Coursera 
+        (\href{https://goo.gl/vP9Kkf}{http://goo.gl/rrRViR}), score 100\%
+  \item Functional Programming Principles in Scala by EPFL on Coursera 
+        (\href{https://goo.gl/vP9Kkf}{https://goo.gl/vP9Kkf}), score 100\%
+\end{no-indent-itemize}
+
+\section*{Publications}
+\begin{no-indent-itemize}
+  \item The ins and outs of first-order runtime verification, 2015, with A. Bauer and J. K\"{u}star, 
+        to appear in {\it Formal Methods in System Design}
+  \item From propositional to first-order monitoring, 2013, with A. Bauer and J. K\"{u}star, 
+        {\it Proc. 4th International Conference on Runtime Verification (RV)}
+  \item Runtime Verification meets Android Security, 2012, with A. Bauer and J. K\"{u}star, 
+        {\it NASA Formal Methods Symposium (NFM 2012)}
+  \item Incomplete Databases: Missing Records and Missing Values, 2012, workshop paper with 
+        W. Nutt and S. Razniewski, {\it Data Quality in Data Integration Systems (DQIS 2012)}
+\end{no-indent-itemize}
+
+\bigskip
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% RADOM STUFF I DON'T WANT TO LOSE
+%
+%
+%
 %      \item {\it Projects}: Teamplace, Personal Printing
       
 %      \begin{enumerate}
@@ -151,32 +204,25 @@
 %		\item Benjamin Sch\"uler (linkedin: \url{https://goo.gl/wtBJ0Q})
 %	  \end{itemize}
 %      \item {\it Technologies}: see descriptions per project below
-\end{itemize}
-\item \textsc{Nicta} Canberra, ACT, Australia, as an intern, August--December 2012. 
-\begin{itemize}
-	 \item $\circ$ Asked back to continue previous work after excellent performance.
-	 \item $\circ$ Expanded on the previous prototype resulting in multiple publications.
-    %  \item {\it Project}: Formal properties of first-order temporal logic for runtime verification and business rules
-     % \item {\it Supervisor}: Andreas Bauer (andreas.bauer@nicta.com.au)
-     % \item {\it Topics}: runtime monitoring of mobile malware, business rules
-\end{itemize}
-\item Siemens AG Munich, as an intern February--April 2012.
-\begin{itemize}
-     \item $\circ$ Reduced REAgent start-up time ({$\scriptstyle\sim$}40 sec) replacing Drool Fusion with ad-hoc algorithms.
-     \item $\circ$ Optimised queries in Optique which resulted in a demo for external customers.
 
-          % \item {\it Projects}: REAgent, Optique
-	 % \item {\it Supervisor}: Mikhail Roshchin (mikhail.roshchin@siemens.com)
-	 % \item {\it Topics}: intelligent data analysis, logic description of data
-\end{itemize}
-\item \textsc{Nicta} Canberra, ACT, Australia, as an intern, August--November 2011. 
-\begin{itemize}
-	\item $\circ$ Prototyped a solution for Android security which was published at the Nasa Formal Method Symposium 2012.
-%      \item {\it Project}: Runtime Verification meets Android Security
-%      \item {\it Supervisor}: Andreas Bauer (andreas.bauer@nicta.com.au)
-%      \item {\it Topics}: runtime monitoring of mobile malware, Android development, behavioural detection
-\end{itemize}
-\end{itemize}
+%\bigskip
+%Gil is a highly skilled developer, with a strong theoretical background. Graduated in April 2013 in the European Master in Computational Logic, a joint degree by TU Dresden, FU Bozen and TU Wien, his early teenage interest in coding developed into an obsessive craving for more complex problems, where 
+%Gil's strong analytical-quantitative mindset, acquired in a bachelor of mathematics, and his research skills, matured in a top-notch overseas research centre, prove invaluable for individuating added-value 
+
+
+%\item
+%\begin{itemize}
+%\item {\it Title}: Paparazzi, for Android 3.0+
+%\item {\it Homepage}: \url{http://goo.gl/541h6}
+%\item {\it Description}: tap the screen to upload a photo onto Facebook
+%\item {\it Technologies}: 
+%        Facebook \textsc{sdk} 3.0: session management, publishing; 
+%        Android camera: surface, preview; 
+%        \textsc{ui/ux}: Android 3.0+ themes, touch events, options menu
+%\item {\it Description}: developed for the last version of Android (3.0+), Paparazzi lets you make fun out of your friends uploading funny yet inconvenient photographs to facebook with just one tap. The user interface, enhanced by stylish Android 3.0+ graphical themes, informs the user to tap anywhere on the screen avoiding mind-boggling menu instructions. When they do so, a quick upload is automatic, except for a first-time integrated log-in. The user then can protect their privacy logging-out via a simple button in the menu. The simplicity and intuitiveness of the UI mask the sophisticated re-engineering of camera's inner workings and the deep social integration with Facebook SDK 3.0, needed for flash optimised speed.
+%\end{itemize}
+
+%\bigskip
 
 %\section*{Other mobile development}
 
@@ -198,166 +244,118 @@
 %\end{itemize1}
 
 
-\section*{Education}
-\begin{itemize}
-  \item M.Sc. EMCL (Computational Logic in Computer Science), TUD, FUB, TUW, October 2010--April 2013, German mark: 1.2--Excellent, thesis mark: 1.0--Excellent; Italian mark: 110/110 cum laude.
-
-  \item B.S. Mathematics, University of Trieste, 2006--2010, mark: 110/110 cum laude. 
-\end{itemize}
-
-\section*{Relevant IT Certifications}
-\begin{itemize}
-\item Oracle Certified Programmer, Java SE 5/SE 6 (OCPJP, formerly SCJP), 28 June 2012, score 95\%
-\item Oracle Certified Associate, Java SE 5/SE 6 (SCJA), 10 July 2010, score 86\%
-\item Functional Programming Principles in Scala by \'Ecole Polytechnique F\'ed\'erale de Lausanne on Coursera,  
-link: \href{https://goo.gl/vP9Kkf}{https://goo.gl/vP9Kkf}, score 100\%
-\end{itemize}
-
-\section*{Publications}
-\begin{itemize}
-\item The ins and outs of first-order runtime verification, 2015, with A. Bauer and J. K\"{u}star, to appear in {\it Formal Methods in System Design}
-
-\item From propositional to first-order monitoring, 2013, with A. Bauer and J. K\"{u}star, {\it Proc. 4th International Conference on Runtime Verification (RV)}
-
-\item Runtime Verification meets Android Security, 2012, with A. Bauer and J. K\"{u}star, {\it NASA Formal Methods Symposium (NFM 2012)}
-
-\item Incomplete Databases: Missing Records and Missing Values, 2012, workshop paper with W. Nutt and S. Razniewski, {\it Data Quality in Data Integration Systems (DQIS 2012)}
-\end{itemize}
-
+          % \item {\it Projects}: REAgent, Optique
+	 % \item {\it Supervisor}: Mikhail Roshchin (mikhail.roshchin@siemens.com)
+	 % \item {\it Topics}: intelligent data analysis, logic description of data
+	 
 % Comments out till next \fi
-\iffalse
+%\iffalse
 
-\section*{Projects in detail}
-\begin{itemize1}
-\item
-\begin{itemize}
-\item {\it Title}: User Interface and browsing for Cortado Corporate 
-\item {\it Referees}: Mathias Pr\"ohl (mathias.proehl@cortado.com),\\\phantom{xxxxxxx.}Johannes Orgis (linkedin: \url{http://goo.gl/PurxAM})
-\item {\it Technologies}: NavigationDrawer, Contextual Action Mode, SwipeToRefreshLayout, ContentProvider, IntentService, Loaders, flipping custom layout, custom themes
-
-\item {\it Description}: (see also Employment) 
-Cortado Corporate and Cortado Workplace are multifunctional solutions for mobile productivity. Features comprehend file browsing, file previewing, file sharing, cloud storage, and cloud printing. Furthermore, the Corporate edition offers MDM and BYOD through the use of Cortado Corporate Server. Both apps are undergoing a complete rebuilt and rebrand. The main idea is to provide a more modern user-interface, additional features, and a cleaner codebase to maintain.
-\medskip
-
-Gil's contribution was twofold: to implement UI/UX patterns for the best user experience and code maintainability, and to write the business logic for remote and local file browsing. 
-For the former, in addition to the NavigationDrawer and the ActionBar with Contextual Actions, Gil reverse-engineered Gmail's approach to multi-select, building a custom layout that can flip between its child views. 
-\medskip
-
-For the latter, remote and local browsing were integrated following the best practices by the Google's engineer Virgil Dobjanschi (Google I/O 2010): a ContentProvider provides the UI with file data, merging a SQLite cache with content from network requests. Those are decoupled in an IntentService. The UI employs Loaders for background loading and uses a custom ActionBar animation to give feedback back to the user. The project took less than three weeks and all the components are back-compatible to Android 2.3.
-\end{itemize}
-
-\bigskip
-
-\item
-\begin{itemize}
-\item {\it Title}: Document preview for Cortado Corporate 
-\item {\it Referees}: Mathias Pr\"ohl (mathias.proehl@cortado.com),
-    \\\phantom{xxxxxxx.}Johannes Orgis (linkedin: \url{http://goo.gl/PurxAM})
-\item {\it Technologies}: Canvas and Paint API, GestureDetector, NinePatches, Service, LruCache, DiskLruCache, bitmap pooling
-\item {\it Description}: (see also Employment and above) Document previewing is a key feature of Cortado Corporate and Workplace. On a preview request, the corresponding file is virtually printed on a remote server, and thereafter the pages are lazily downloaded one by one. The main challenge is to keep memory usage below the hard limit of the memory class while, at the same time, avoid garbage collection that would generate hiccups on the UI. Other constraints encompass avoiding unnecessary downloading and decoding, and performant touch gestures such as pinch zoom and quick scale.
-\medskip
-
-The solution is totally decoupled component, made up of a UI part and a backend Service part. For the former, DocumentView has been entirely coded up, basically a zoomable ListView supporting different page geometries and page tiling, to reduce unnecessary drawing. The pixel-precise edge detection, the tiling, and the implementation of the scaling transformations would have been almost impossible without Gil's strong mathematical background. For the backend part, Gil implemented a Service with a efficiently synchronised two-level cache, a bitmap pool that let the decoder reuse memory and avoid garbage collection, and a network requests re-orderer that always tries to download first the currently visible pages on screen.
-\end{itemize}
-
-\bigskip
-
-\item
-\begin{itemize}
-\item {\it Title}: Personal Printing 3.0 for Android 
-\item {\it Referee}: Johannes Orgis, linkedin: \url{http://goo.gl/PurxAM}
-\item {\it Google Play}: \url{https://goo.gl/qHCaLR}
-\item {\it Technologies}: Android 3.0+, HttpUrlRequest for REST, hybrid Services, ZXing, custom Views, animations
-\item {\it Description}: (see also Employment) Personal Printing is Cortado AG's pull-printing solution that helps minimise printing costs in your company. Print jobs are managed directly at the printer by the Personal Printing app, letting the user delete unnecessary jobs, thus saving toner, and collect them on the spot, thus preventing private data leaks and printer trays clogging.
-\medskip
-
-An iOS version had been already developed when Gil took up the task of porting the app to Android. The UI was adapted to an edgier, smoother, more asynchronous version, taking advantage of a custom SlideView that Gil coded up, and keeps maintaining, as a subproject. The REST requests, differently from the iOS version, do not block the UI: they were decoupled in a Service that elegantly communicates with the Activity through Messengers. Advanced animation tricks exploiting onPreDrawListener were employed for the ListView removal animation.
-\end{itemize}
-
-\bigskip
+%\section*{Projects in detail}
+%\begin{itemize1}
 %\item
 %\begin{itemize}
-%\item {\it Title}: Paparazzi, for Android 3.0+
-%\item {\it Homepage}: \url{http://goo.gl/541h6}
-%\item {\it Description}: tap the screen to upload a photo onto Facebook
-%\item {\it Technologies}: 
-%        Facebook \textsc{sdk} 3.0: session management, publishing; 
-%        Android camera: surface, preview; 
-%        \textsc{ui/ux}: Android 3.0+ themes, touch events, options menu
-%\item {\it Description}: developed for the last version of Android (3.0+), Paparazzi lets you make fun out of your friends uploading funny yet inconvenient photographs to facebook with just one tap. The user interface, enhanced by stylish Android 3.0+ graphical themes, informs the user to tap anywhere on the screen avoiding mind-boggling menu instructions. When they do so, a quick upload is automatic, except for a first-time integrated log-in. The user then can protect their privacy logging-out via a simple button in the menu. The simplicity and intuitiveness of the UI mask the sophisticated re-engineering of camera's inner workings and the deep social integration with Facebook SDK 3.0, needed for flash optimised speed.
+%\item {\it Title}: User Interface and browsing for Cortado Corporate 
+%\item {\it Referees}: Mathias Pr\"ohl (mathias.proehl@cortado.com),\\\phantom{xxxxxxx.}Johannes Orgis (linkedin: \url{http://goo.gl/PurxAM})
+%\item {\it Technologies}: NavigationDrawer, Contextual Action Mode, SwipeToRefreshLayout, ContentProvider, IntentService, Loaders, flipping custom layout, custom themes
+
+%\item {\it Description}: (see also Employment) 
+%Cortado Corporate and Cortado Workplace are multifunctional solutions for mobile productivity. Features comprehend file browsing, file previewing, file sharing, cloud storage, and cloud printing. Furthermore, the Corporate edition offers MDM and BYOD through the use of Cortado Corporate Server. Both apps are undergoing a complete rebuilt and rebrand. The main idea is to provide a more modern user-interface, additional features, and a cleaner codebase to maintain.
+%\medskip
+
+%Gil's contribution was twofold: to implement UI/UX patterns for the best user experience and code maintainability, and to write the business logic for remote and local file browsing. 
+%For the former, in addition to the NavigationDrawer and the ActionBar with Contextual Actions, Gil reverse-engineered Gmail's approach to multi-select, building a custom layout that can flip between its child views. 
+%\medskip
+
+%For the latter, remote and local browsing were integrated following the best practices by the Google's engineer Virgil Dobjanschi (Google I/O 2010): a ContentProvider provides the UI with file data, merging a SQLite cache with content from network requests. Those are decoupled in an IntentService. The UI employs Loaders for background loading and uses a custom ActionBar animation to give feedback back to the user. The project took less than three weeks and all the components are back-compatible to Android 2.3.
 %\end{itemize}
 
 %\bigskip
-\item
-\begin{itemize}
-\item {\it Title}: Formal properties of first-order temporal logic for runtime verification and business rules 
-\item {\it Referees}: Andreas Bauer (andreas.bauer@nicta.com.au), Jan K\"{u}star (\textsc{Nicta} and ANU)
-\item {\it Theories}: LTL, model-checking, B\"uchi automata
-\item {\it Description}: (see also Employment) The development of the previous project was carried out in the form of a Master's thesis. The concept of a proper monitor was formalised and, albeit the shown impossibility of building a complete monitoring algorithm, a correct construction based on a novel automata model was depicted and then finally tested in the context of Android policies and the PCBRP project, the Provably Correct Rules and Processes project at \textsc{Nicta}.
-\end{itemize}
 
-\bigskip
-\item
-\begin{itemize}
-\item {\it Title}: Runtime Verification meets Android Security 
-\item {\it Referees}: Andreas Bauer (andreas.bauer@nicta.com.au), Jan K\"{u}star (\textsc{Nicta} and ANU)
-\item {\it Technologies}: Android OS 2.6, Java (Dalvik VM)
-\item {\it Environments}: Eclipse, Android emulator and Samsung Nexus S
-\item {\it Description}: (see also Employment and Publications) The goal was to develop a dynamic security mechanism for Android-powered handsets based on runtime verification, which lets users monitor the behaviour of installed applications. A prototype was implemented and it was shown how it could detect some real-world security threats.
-\end{itemize}
+%\item
+%\begin{itemize}
+%\item {\it Title}: Document preview for Cortado Corporate 
+%\item {\it Referees}: Mathias Pr\"ohl (mathias.proehl@cortado.com),
+%    \\\phantom{xxxxxxx.}Johannes Orgis (linkedin: \url{http://goo.gl/PurxAM})
+%\item {\it Technologies}: Canvas and Paint API, GestureDetector, NinePatches, Service, LruCache, DiskLruCache, bitmap pooling
+%\item {\it Description}: (see also Employment and above) Document previewing is a key feature of Cortado Corporate and Workplace. On a preview request, the corresponding file is virtually printed on a remote server, and thereafter the pages are lazily downloaded one by one. The main challenge is to keep memory usage below the hard limit of the memory class while, at the same time, avoid garbage collection that would generate hiccups on the UI. Other constraints encompass avoiding unnecessary downloading and decoding, and performant touch gestures such as pinch zoom and quick scale.
+%\medskip
 
-\bigskip
-\item
-\begin{itemize}
-\item {\it Title}: Incomplete Databases: Missing Records and Missing Values
-\item {\it Referees}: Werner Nutt (nutt@inf.unibz.it), Simon Razniewski (razniewski@inf.unibz.it)
-\item {\it Description}: (see also Publications) The goal was to extend the previous theory of incompleteness of database by W. Nutt and S. Razniewski with null values, which represent missing attributes. The concepts of query completeness and table completeness were extended, a description and a proof of tc-qc entailment given, and different real-world scenarios outlined. 
-\end{itemize}
+%The solution is totally decoupled component, made up of a UI part and a backend Service part. For the former, DocumentView has been entirely coded up, basically a zoomable ListView supporting different page geometries and page tiling, to reduce unnecessary drawing. The pixel-precise edge detection, the tiling, and the implementation of the scaling transformations would have been almost impossible without Gil's strong mathematical background. For the backend part, Gil implemented a Service with a efficiently synchronised two-level cache, a bitmap pool that let the decoder reuse memory and avoid garbage collection, and a network requests re-orderer that always tries to download first the currently visible pages on screen.
+%\end{itemize}
 
-\bigskip
-\item
-\begin{itemize}
-\item {\it Title}: REAgent
-\item {\it Referee}: Mikhail Roshchin (mikhail.roshchin@siemens.com)
-\item {\it Technologies}: C\#, Drool Expert, Drools Fusion
-\item {\it Environment}: Visual Studio 2010 Express
-\item {\it Description}: Siemens is currently working on automatic detection of turbines failure and malfunctioning. The abductive reasoning is carried out by an higher-level module which infers possible causes from event messages generated by a lower-level module. The messages represent the actual data or rather the meaningful pieces of it. The data needs to be translated in messages and this is done sieving raw data through logical expert-made formulas whose semantics clusters together and filters out pieces. 
-\medskip
+%\bigskip
 
-This project was about the lower-level component, improving an existent theory to the point of a (simple) working implementation. The formal syntax of the formulas was completely reworked and a new semantics developed to mathematical rigour. A C\# implementation was provided and tested against real use-cases. Documentation was written. A final reworking to the core algorithms made the Drools platform to be superfluous, leading to a sharp improvement of final speed. This would not have been possible without Gil's theoretical and research background which helped to  point out existent foundational problems and to implement algorithms substituting Drool's rules engine.
-\end{itemize}
+%\item
+%\begin{itemize}
+%\item {\it Title}: Personal Printing 3.0 for Android 
+%\item {\it Referee}: Johannes Orgis, linkedin: \url{http://goo.gl/PurxAM}
+%\item {\it Google Play}: \url{https://goo.gl/qHCaLR}
+%\item {\it Technologies}: Android 3.0+, HttpUrlRequest for REST, hybrid Services, ZXing, custom Views, animations
+%\item {\it Description}: (see also Employment) Personal Printing is Cortado AG's pull-printing solution that helps minimise printing costs in your company. Print jobs are managed directly at the printer by the Personal Printing app, letting the user delete unnecessary jobs, thus saving toner, and collect them on the spot, thus preventing private data leaks and printer trays clogging.
+%\medskip
 
-\bigskip
-\item
-\begin{itemize}
-\item {\it Title}: Optique
-\item {\it Referees}: Mikhail Roshchin (mikhail.roshchin@siemens.com), Jan-Gregor Fischer
-\item {\it Technologies}: SparkQl, D2RQ, Oracle Database 11g, Proteg\'e, C\# 
-\item {\it Environments}: Oracle Database 11g
-\item {\it Description}: Siemens is currently working on automatic detection of turbines failure and malfunctioning. 
-In the above mentioned project's framework, Siemens draws the adbuctive inferences from a formal description of the turbines themselves. The formal description of the turbines is rendered by an ontology, a UML-like diagram expressing relations among turbine's parts and among parts, observations and synthoms of those parts. After the logical schema is drawn, the structure needs to be populated as with classes and object instances. The individuals of the ontology are made from a large Oracle database through D2RQ mappings connecting raw table entries with abstract objects. 
-\medskip
+%An iOS version had been already developed when Gil took up the task of porting the app to Android. The UI was adapted to an edgier, smoother, more asynchronous version, taking advantage of a custom SlideView that Gil coded up, and keeps maintaining, as a subproject. The REST requests, differently from the iOS version, do not block the UI: they were decoupled in a Service that elegantly communicates with the Activity through Messengers. Advanced animation tricks exploiting onPreDrawListener were employed for the ListView removal animation.
+%\end{itemize}
 
-This project was about the mapping level, interfacing the database with the ontology. Setting up a suitable environment (Proteg\'e and the Oracle Database 11g), layering and extending the existing ontology, writing up the mappings from scratch, developing a nice web-interface, making up meaningful queries, writing the documentation and even a slide presentation were all tasks that have been accomplished. To link the components Siemens-made C\# software was used: Gil's expertise led to discover and quickly correct bugs in the source code. 
-\end{itemize}
-\end{itemize1}
+%\bigskip
+%\item
+%\begin{itemize}
+%\item {\it Title}: Formal properties of first-order temporal logic for runtime verification and business rules 
+%\item {\it Referees}: Andreas Bauer (andreas.bauer@nicta.com.au), Jan K\"{u}star (\textsc{Nicta} and ANU)
+%\item {\it Theories}: LTL, model-checking, B\"uchi automata
+%\item {\it Description}: (see also Employment) The development of the previous project was carried out in the form of a Master's thesis. The concept of a proper monitor was formalised and, albeit the shown impossibility of building a complete monitoring algorithm, a correct construction based on a novel automata model was depicted and then finally tested in the context of Android policies and the PCBRP project, the Provably Correct Rules and Processes project at \textsc{Nicta}.
+%\end{itemize}
 
+%\bigskip
+%\item
+%\begin{itemize}
+%\item {\it Title}: Runtime Verification meets Android Security 
+%\item {\it Referees}: Andreas Bauer (andreas.bauer@nicta.com.au), Jan K\"{u}star (\textsc{Nicta} and ANU)
+%\item {\it Technologies}: Android OS 2.6, Java (Dalvik VM)
+%\item {\it Environments}: Eclipse, Android emulator and Samsung Nexus S
+%\item {\it Description}: (see also Employment and Publications) The goal was to develop a dynamic security mechanism for Android-powered handsets based on runtime verification, which lets users monitor the behaviour of installed applications. A prototype was implemented and it was shown how it could detect some real-world security threats.
+%\end{itemize}
 
-\section*{Hobbies}
-Languages and linguistics, running, martial art (practised for two years by Makoto Gymn in Trieste) and basketball (played for one year in the university's team), playing piano, graphics and portrait drawing, travelling around the world
+%\bigskip
+%\item
+%\begin{itemize}
+%\item {\it Title}: Incomplete Databases: Missing Records and Missing Values
+%\item {\it Referees}: Werner Nutt (nutt@inf.unibz.it), Simon Razniewski (razniewski@inf.unibz.it)
+%\item {\it Description}: (see also Publications) The goal was to extend the previous theory of incompleteness of database by W. Nutt and S. Razniewski with null values, which represent missing attributes. The concepts of query completeness and table completeness were extended, a description and a proof of tc-qc entailment given, and different real-world scenarios outlined. 
+%\end{itemize}
 
-% End of commented section
-\fi
+%\bigskip
+%\item
+%\begin{itemize}
+%\item {\it Title}: REAgent
+%\item {\it Referee}: Mikhail Roshchin (mikhail.roshchin@siemens.com)
+%\item {\it Technologies}: C\#, Drool Expert, Drools Fusion
+%\item {\it Environment}: Visual Studio 2010 Express
+%\item {\it Description}: Siemens is currently working on automatic detection of turbines failure and malfunctioning. The abductive reasoning is carried out by an higher-level module which infers possible causes from event messages generated by a lower-level module. The messages represent the actual data or rather the meaningful pieces of it. The data needs to be translated in messages and this is done sieving raw data through logical expert-made formulas whose semantics clusters together and filters out pieces. 
+%\medskip
 
+%This project was about the lower-level component, improving an existent theory to the point of a (simple) working implementation. The formal syntax of the formulas was completely reworked and a new semantics developed to mathematical rigour. A C\# implementation was provided and tested against real use-cases. Documentation was written. A final reworking to the core algorithms made the Drools platform to be superfluous, leading to a sharp improvement of final speed. This would not have been possible without Gil's theoretical and research background which helped to  point out existent foundational problems and to implement algorithms substituting Drool's rules engine.
+%\end{itemize}
 
-\bigskip
+%\bigskip
+%\item
+%\begin{itemize}
+%\item {\it Title}: Optique
+%\item {\it Referees}: Mikhail Roshchin (mikhail.roshchin@siemens.com), Jan-Gregor Fischer
+%\item {\it Technologies}: SparkQl, D2RQ, Oracle Database 11g, Proteg\'e, C\# 
+%\item {\it Environments}: Oracle Database 11g
+%\item {\it Description}: Siemens is currently working on automatic detection of turbines failure and malfunctioning. 
+%In the above mentioned project's framework, Siemens draws the adbuctive inferences from a formal description of the turbines themselves. The formal description of the turbines is rendered by an ontology, a UML-like diagram expressing relations among turbine's parts and among parts, observations and synthoms of those parts. After the logical schema is drawn, the structure needs to be populated as with classes and object instances. The individuals of the ontology are made from a large Oracle database through D2RQ mappings connecting raw table entries with abstract objects. 
+%\medskip
 
-% Footer
-\begin{center}
-  \begin{footnotesize}
-    Last updated: \today \\
-    \href{\footerlink}{\texttt{\footerlink}}
-  \end{footnotesize}
-\end{center}
+%This project was about the mapping level, interfacing the database with the ontology. Setting up a suitable environment (Proteg\'e and the Oracle Database 11g), layering and extending the existing ontology, writing up the mappings from scratch, developing a nice web-interface, making up meaningful queries, writing the documentation and even a slide presentation were all tasks that have been accomplished. To link the components Siemens-made C\# software was used: Gil's expertise led to discover and quickly correct bugs in the source code. 
+%\end{itemize}
+%\end{itemize1}
 
-\end{document}
+%
+%\section*{Hobbies}
+%Languages and linguistics, running, martial art (practised for two years by Makoto Gymn in Trieste) and basketball (played for one year in the university's team), playing piano, graphics and portrait drawing, travelling around the world
+
+%% End of commented section
+%\fi
